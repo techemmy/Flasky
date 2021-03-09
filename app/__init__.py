@@ -33,7 +33,6 @@ def create_app(config_name):
     db.init_app(app)
     login_manager.init_app(app)
     pagedown.init_app(app)
-    sslify.init_app(app)
 
     @app.route('/secret')
     @login_required
