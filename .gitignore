@@ -2,3 +2,4 @@ data-dev.sqlite
 .vscode
 .idea
 __pycache__
+.env
