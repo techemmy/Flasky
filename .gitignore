@@ -3,3 +3,4 @@ data-dev.sqlite
 .idea
 __pycache__
 .env
+data.sqlite
