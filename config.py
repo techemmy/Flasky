@@ -93,7 +93,7 @@ class DockerConfig(ProductionConfig):
     @classmethod
     def init_app(cls, app):
         ProductionConfig.init_app(app)
-        
+
         # log to stderr
         import logging
         from logging import StreamHandler

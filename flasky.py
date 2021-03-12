@@ -4,6 +4,12 @@ import click
 from app import create_app, db
 from app.models import User, Role, Post
 from flask_migrate import Migrate, upgrade
+from dotenv import load_dotenv
+
+
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
 
 COV = None
 if os.environ.get('FLASK_COVERAGE'):
